@@ -1,0 +1,120 @@
+:root {
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+    --dark-blue: hsl(228, 12%, 48%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --dark-cyan-hover: hsl(159, 68%, 16%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --font-primary: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Space+Mono&display=swap');
+    --font-secondary: url();
+}
+
+html {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 5px - 14px);
+}
+
+main {
+    max-width: 600px;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 14px;
+    color: var(--dark-blue);
+}
+
+button {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    padding: 1em;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--dark-cyan-hover);
+    cursor: pointer;
+}
+
+img {
+    content: url(images/image-product-desktop.jpg);
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px 0px 0px 15px;
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    img {
+        content: url(images/image-product-mobile.jpg);
+        max-width: 100%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    h1 {
+        font-size: revert;
+        margin: 0;
+    }
+}
+
+.productype {
+    text-transform: capitalize;
+    font-size: 1em;
+    letter-spacing: 0.5ch;
+    margin-top: 2em;
+}
+
+.description {
+    margin: 0 2em 2em 2em;
+}
+
+.saleprice {
+    color: var(--dark-cyan);
+    font-size: x-large;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    text-decoration: line-through;
+    margin-left: 2em;
+}
+
+.description {
+    background-color: var(--white);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
