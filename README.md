@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the finished prototype in Desktop](./design/screenshot.jpg)
+![Screenshot of the finished prototype in Desktop](./design/screenshot.png)
 
 ### Links
 
